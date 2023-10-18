@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+    
+    <!-- Tailwind-Connection -->
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.20/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!-- Customization -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                orange: '#EB5757',
+                lightWhite: '#FEF7F7',
+                offwhite: 'rgba(235, 87, 87, 0.05)',
+                ash : '#585858',
+              }
+            }
+          }
+        }
+      </script>
+    
+    <!-- Font - Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e0c787076f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <header>
+        <nav class="text-center mt-8 mb-10">
+            <h3 class="font-bold text-2xl mb-6">AI Universe Hub</h3>
+            <button id="sort-by-date" class="bg-orange rounded p-3 font-medium text-white text-xs">Sort By Date</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- AI Cards Container -->
+        <section class="max-w-5xl mx-auto">
+            <div id="ai-container" class="grid lg:grid-cols-3 gap-5  md:grid-cols-2   lg:p-0 p-5 mb-8">
+            </div>
+
+            <div class="text-center mb-12">
+                <button id="see-more-btn" class="bg-orange rounded p-3 font-medium text-white text-xs hidden">See More</button>
+            </div>
+        </section>
+
+        <!-- Loader Part -->
+        <section id="loader" class="flex justify-center items-center mb-16 hidden">
+            <span class="loading loading-bars loading-lg border-2"></span>
+        </section>
+
+        <!-- AI Detail -->
+        <section class="relative">
+            <dialog id="my_modal_4" class="modal">
+                <form method="dialog" class="modal-box w-11/12 max-w-3xl">
+                    <div id="show-details-container" class="grid lg:grid-cols-2 md:grid-cols-2 gap-4">
+                        
+                    </div>
+                    
+                    <div class="modal-action">
+                        <button class="btn btn-circle btn-sm bg-red-600 hover:bg-red-400 text-white absolute top-0 right-0"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </form>
+            </dialog>
+        </section>
+    </main>
+
+    <!-- JS file connected -->
+    <script src="js/ai_uni.js"></script>
+</body>
+</html>
