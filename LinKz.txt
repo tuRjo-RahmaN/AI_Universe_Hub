@@ -1,2 +1,3 @@
-GitHub Link - https://github.com/tuRjo-RahmaN/AI_Universe_Hub.git
-Live Site Link - 
+*GitHub Link - https://github.com/tuRjo-RahmaN/AI_Universe_Hub
+
+*Live Site Link - https://clever-bubblegum-114ad8.netlify.app/
